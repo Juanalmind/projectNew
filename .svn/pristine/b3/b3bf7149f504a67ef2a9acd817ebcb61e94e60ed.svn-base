@@ -1,0 +1,42 @@
+body.login_page {
+	background-color: #0067A1;	
+}
+
+.container .title{
+	color: white;
+	font-style: weight;
+	font-family: Arial;
+	text-align: left;
+
+}
+
+.sso-box{
+	width: 70em;
+	height: 40em;
+	margin-left: 18vw;
+
+}
+
+
+@media (max-width:800px) {
+  .sso-box, .table-striped {
+    width:100%; /*The width is 100%, when the viewport is 800px or smaller*/
+  }
+}
+
+
+.contentsso{
+	margin:0px;
+
+}
+
+.sso-box input[type=text]{
+	width:23em;
+	background-color: white;
+
+}
+
+.form-control{
+	width: 25em;
+
+}

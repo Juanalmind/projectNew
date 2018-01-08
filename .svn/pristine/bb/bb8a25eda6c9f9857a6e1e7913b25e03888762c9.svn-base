@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Asignaci&oacuten de tareas</title>
+        <META charset="utf-8"/>
+        <META http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <META name="viewport" content="width=device-width, initial-scale=1"/>     
+
+        <LINK rel="stylesheet" type="text/css" href="css/bootstrap.css"/>   
+        <LINK rel="stylesheet" type="text/css" href="css/style_min.css"/>
+        <LINK rel="stylesheet" type="text/css" href="css/tablaasignacion.css"/>
+
+        <SCRIPT type="text/javascript" src="js/jquery-3.2.1.min.js"></SCRIPT>
+        <SCRIPT src="js/bootstrap.min.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="js/comportamiento.js"></SCRIPT>
+    </head>
+
+    <body>
+        <NAV class="top-bar clearfix">
+            <DIV class="container-fluid clearfix">
+                <A class="top-bar-brand" href="#">
+                    <SPAN class="atosIconFont atosIconFont-logo"></SPAN>
+                </A>                
+            </DIV>
+
+        </NAV>
+        <DIV class="clearfix contentsso pki" role="main" style="margin-top: 30.25px;">
+            <SECTION class="clearfix sso-box">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><h2><a>Asignaci&oacuten de tareas</a></h2></li>
+                    <li class="list-inline-item"><h4><a href="tablatareas.jsp">Tareas</a></h4></li>
+                    <li class="list-inline-item"><h4><a href="tablausuarios.jsp">Usuarios</a></h4></li>
+                    <li class="list-inline-item"><a class="btn btn-info">LOGOUT</a></li>
+                </ul>
+                
+                <form action="" method="post" id="taskt">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th> EDITAR </th>
+                    		    <th> DAS USUARIO </th>
+                    		    <th> ID TAREA </th>
+                    		    <th> GRUPO </th>
+                                <th> <input type="button" value="+" class="btn btn-info addButton"/> </th>
+                            </tr>
+                        </thead>
+                        <tbody class="clone_cont">
+                            <tr class="clone">
+                                <td> <input type="text" name="das" placeholder="DAS Usuario" class="form-control"/> </td>
+                                <td> <input type="text" name="taskId" placeholder="ID Tarea" class="form-control"/> </td>
+                                <td> <input type="text" name="group" placeholder="Grupo" class="form-control"/> </td>
+                                <td> <input type="button" class="btn btn-info editMe" name="editar" value="EDITAR"/> </td>
+                                <td> <input type="button" class="btn btn-info removeMe" name="borrar" value="BORRAR"/> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </SECTION>
+        </DIV>
+    </body>
+</html>
